@@ -1,0 +1,15 @@
+# default values
+all:
+  player:
+    base_url: http://localhost/mazemod/tracks/
+
+preview:
+  player:
+    base_url: http://preview.mazemod.org/tracks/
+
+prod:
+  player:
+    base_url: http://www.mazemod.org/tracks/
+
+  feeds:
+    posts_url: http://feeds.feedburner.com/mazemod-news

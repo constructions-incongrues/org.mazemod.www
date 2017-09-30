@@ -1,0 +1,16 @@
+#gfx {margin-left:30px;}
+#player {margin-left:-15px;}
+#text {margin-left:-15px;}
+
+#container { width:1040px }
+
+#footer   {margin-top:10px;margin-left:80px;height:0px;}
+#mailing {margin-top:10px;}
+#mailing label {margin-left:10px;}
+
+#navbar a:hover {border-bottom:8px;}
+  body {
+    color: #000000;
+
+      }
+

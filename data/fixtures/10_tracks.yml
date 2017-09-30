@@ -1,0 +1,41 @@
+Track:
+
+  track1:
+    title:                      Aliens at School
+    composer:                   Ijon Tichy
+    tags:                       "chip, acid, bass, trax"
+    converted_filename:         aliens_at_school.mp3
+    original_filename:          aliens_at_school.mod
+    original_file_md5:          54e66c5b67ad13dbc100aa399aae51be
+    is_metadata_complete:       true
+    is_enabled:                 true
+
+  track2:
+    title:                      Antichrist
+    composer:                   Ijon Tichy
+    tags:                       bass
+    converted_filename:         antichrist.mp3
+    original_filename:          antichrist.mod
+    original_file_md5:          4fcd04a86c590e59bef0d9a30e762ef5
+    is_metadata_complete:       true
+    is_enabled:                 false
+
+  track3:
+    title:                      Metal Mutant
+    composer:                   Wuju
+    tags:                       "chip, trax"
+    converted_filename:         metal_mutant.mp3
+    original_filename:          metal_mutant.mod
+    original_file_md5:          067e9cb82f0c1ab52c4883f882de2d80
+    is_metadata_complete:       true
+    is_enabled:                 true
+
+  track4:
+    title:                      Motto motto
+    composer:                   Bertier
+    tags:                       "chip, trax"
+    converted_filename:         motto.mp3
+    original_filename:          motto.mod
+    original_file_md5:          aafaf25a824d9b04a427dda3d11f7b89
+    is_metadata_complete:       false
+    is_enabled:                 false

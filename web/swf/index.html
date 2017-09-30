@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>MzMd_Zwei</title>
+<script>
+function thisMovie(movieName) {
+     if (navigator.appName.indexOf("Microsoft") != -1) {
+          return window[movieName]
+     }
+     else {
+          return document[movieName]
+     }
+}
+function faitDesTrucsDansFlash(str) {
+	thisMovie("mzmd").parleAvecFlash(str);
+}
+</script>
+</head>
+<body bgcolor="#9933ff">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="436" height="240" align="middle">
+  <param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="MzMd_Fier.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#000000" />
+<param name="id" value="mzmd">
+<embed src="MzMd_Fier.swf" width="436" height="240" align="middle" quality="high" bgcolor="#000000" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" id="mzmd" />
+</object><br>
+<br>
+
+<a href="#" onclick="faitDesTrucsDansFlash('http://www.mazemode.org/playlist/goto80'); return false;"><strong>bouton qui simule_un appel du js de playlist</strong></a>
+</body>
+</html>

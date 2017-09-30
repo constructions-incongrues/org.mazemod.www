@@ -1,0 +1,100 @@
+# TODO : use alternative schema (native in sf-1.1 ?)
+# TODO : indexes
+# TODO : constraints
+
+propel:
+
+  # Represents a track that can be played
+  track:
+
+    # Business metadata
+    title:                  varchar(255)
+    composer:               varchar(255)
+    original_filename:      varchar(255)
+    converted_filename:     varchar(255)
+    original_file_md5:      { type: varchar(32), index: unique }
+    is_metadata_complete:   boolean
+    is_enabled:             boolean
+
+    # Automatic medatata
+    created_at:
+    updated_at:
+    id:
+
+  # An authored, ordered list of tracks
+  playlist:
+
+    # Business metadata
+    title:               varchar(255)
+    is_enabled:          boolean
+    author:              varchar(255)  # TODO : normalize ?
+    description:         longvarchar
+
+    # Automatic metadata
+    created_at:
+    updated_at:
+    id:
+
+  # Holds tracks / playlists relationships
+  # TODO : best way to hold n:m relationships in sf-1.1 ?
+  # see : http://www.aide-de-camp.org/talk/15/dutch-php-conference-2008-en?position=32
+  playlist_has_track:
+
+    # Business metadata
+    playlist_id:
+    track_id:
+    position:            integer        # TODO : use sfPropelActAsSortablePlugin ?
+
+    # Automatic metadata
+    created_at:
+    updated_at:
+    id:
+
+  # Represents "news" items
+  post:
+
+    # Business metadata
+    title:               varchar(255)
+    body:                longvarchar
+    is_enabled:          boolean
+
+    # Automatic metadata
+    created_at:
+    updated_at:
+    id:
+
+  # Represents a "job" items
+  job:
+
+    # Business metadata
+    handler:            varchar(255)
+    data:               longvarchar
+    status:             tinyint
+
+    # Automatic metadata
+    created_at:
+    updated_at:
+    id:
+
+  link:
+
+    # Business metadata
+    title: longvarchar
+    url: longvarchar
+    description : longvarchar
+    link_category_id:
+
+    # Automatic metadata
+    created_at:
+    updated_at:
+    id:
+
+  link_category:
+
+    # Business metadata
+    name: varchar(255)
+
+    # Automatic metadata
+    created_at:
+    updated_at:
+    id:

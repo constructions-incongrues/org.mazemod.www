@@ -1,0 +1,277 @@
+/*
+
+ _____ _____ _____ _____ _____ _____ ____
+|     |  _  |__   |   __|     |     |    \
+| | | |     |   __|   __| | | |  |  |  |  |
+|_|_|_|__|__|_____|_____|_|_|_|_____|____/
+	an online radio project focusing on amiga & pc trackers music.
+
+*/
+
+
+body
+ {
+	font-family:"Courier",Verdana;
+	color: #3e3c7d;
+ }
+
+/* Box
+*******************************************************************************/
+
+#container
+	{
+	  background-color:#FFF;
+	  width:960px;
+	  height:540px;
+	  position:fixed !important;
+	  position:absolute;
+	  top:50%;
+	  left:50%;
+	  margin-top:-270px;
+	  margin-left:-480px;
+	}
+
+#navbar
+	{
+	  color: #000;
+	  background-color:#FFF;
+	  float:left;
+	  height:481px;
+	  width:161px;
+	  margin-right:-25px;
+	  margin-top:-1px;
+	  background-image:url(../images/ico/logo.gif);
+	  background-repeat:no-repeat;
+	}
+
+#gfx
+	{
+	  height:480px;
+	  width:320px;
+	  background-color:#FFF;
+	  color:#000;
+	  float:left;
+	}
+
+#player
+	{
+	  height:240px;
+	  width:436px;
+	  background-color: #FFF;
+	  color:#000;
+	  float:right;
+      margin-right:14px;
+	}
+
+#text
+	{
+	  height:240px;
+	  width:436px;
+	  background-image:url(../images/ico/mm_pattern.gif);
+	  background-repeat:repeat-y;
+      background-color:#cccecc;
+	  color:#000;
+      float:right;
+      margin-right:14px;
+      overflow:auto;
+      text-align:justify;
+	  word-spacing: 2px;
+	  letter-spacing: 1px;
+	  line-height: 1.1em;
+	  font-size: 0.8em;
+
+     }
+
+#text p, #text li {
+      padding-left:10px;
+      padding-top:-8px;
+      padding-right:9px;}
+
+/* Typo --- Play with font !
+*******************************************************************************/
+
+#text p:hover
+	{
+      background-color: white;
+	}
+
+#text br
+	{
+	  padding:20px;
+	}
+
+/* Liens
+******************************************************************************/
+
+a img {border: 0;}
+
+#text a:hover, ul a:hover
+{
+color:#000;
+background-color:#FFF;
+text-decoration:none;
+border-bottom:none;
+}
+
+#text a, #text a:active   {
+     color:#000;
+     background-color:transparent;
+	text-decoration:underline; 	}
+	
+	#text a:visited {text-decoration:underline;}
+
+/*
+#text ul a, #text ul a:visited,#text ul a:active {border-bottom:0px;} /* no design on links for link page */
+*/
+
+/* Navbar
+******************************************************************************/
+
+
+#navbar ul
+	{
+      list-style-image:none ;
+	}
+
+#navbar li
+	{
+	  list-style-type: none;
+      margin-left:40px;
+	}
+
+#navbar li.ico1 {margin-top:260px;}
+
+#navbar a:hover {border-bottom:8px solid transparent;}
+
+#navbar a
+   {
+     color:#000;
+     background-color:transparent;
+     text-decoration:none;
+     display: block ;
+	 width: 75px ;
+     border-bottom:8px solid #000;
+	 text-align: left;
+	 font-size: 0.8em;
+	 margin-bottom:5px;
+ 	}
+
+
+
+/* for link, playlist page
+*******************************************************************************/
+  H1
+{
+     border-bottom:8px solid #000;
+	 text-align: left;
+	 margin-left:8px;
+	 font-size: 1em;
+	 font-weight:normal;
+	 color:#000;
+     display: block ;
+/* otro size
+	 width: 275px ;
+*/
+	 width:300px;
+	 margin-bottom:5px;
+}
+
+ul
+	{
+      list-style-image:none ;
+	}
+
+li
+	{
+	  list-style-type: none;
+	  margin-left:-38px;
+	  text-align:justify;
+	}
+
+#text ul:hover {background-color:#FFF}
+
+#text p img:hover {background-color:transparent;}
+
+#banner {margin-top:20px;}
+#text #banner:hover
+{
+background-color:transparent;
+}
+
+/* Footer
+*******************************************************************************/
+
+#footer
+	{
+	 color:#FFF;
+	 background-color:#000;
+	 width:948px;
+	 height:38px;
+	 letter-spacing: 1px;
+     line-height: 1.3em;
+     font-size: 0.8em;
+     margin-top:490px;
+	}
+
+#rss_ico 
+	{
+	  float:left;
+	  margin-left:-160px;
+	  margin-top:13px;	
+	  } 
+	
+#rss_ico a, #rss_ico a:active, #rss_ico a:visited {color:#FFF;font-weight:normal;text-decoration:none;}
+
+#donate {
+	margin:0;
+	padding:0;
+	border:0;
+	display:inline;
+	letter-spacing: 1px;  
+	line-height: 1.3em; 
+	font-family:"Courier",Verdana;
+}
+.donate-add {
+	color: #FFF; 
+	background-color: #000; 
+	border: 0; 
+	padding:0; margin:0;
+	letter-spacing: 1px; 
+	line-height: 1.3em;	
+	font-family:"Courier",Verdana;
+}
+
+
+#mailing {float:right; margin-top:-13px;margin-right:7px;}	 
+#mailing label
+	{
+     color: #FFF;
+	 background-color:#000;
+	 padding-left:5px;
+/*
+	 margin-left:430px;
+*/
+	}
+
+#mailing input.champs
+	{
+ 	 border:1px solid #FFF;
+	 height:15px;
+ 	 padding-left:4px;
+ 	 margin-top:10px;
+	}
+
+#mailing input.valid
+	{
+	 color:#000;
+	 background-color:#FFF;
+	 border:1px solid transparent;
+	 height:19px;
+	}
+
+#mailing input.valid:hover
+	{
+     border:1px solid #000;
+     color:#FFF;
+	 background-color:transparent;
+	}

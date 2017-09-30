@@ -1,0 +1,80 @@
+/* css boackoffice */
+
+* {margin:0; padding:0;}
+
+/* navbar ***********************************************************/
+
+#navbar 
+{
+	  color: #000;
+	  background-color:#54fcfc;
+	  height:481px;
+	  width:200px;
+	  background-image:url(../images/ico/backend-navbar.gif);
+	  background-repeat:no-repeat;
+	  height:100%;
+	  position: absolute;
+      left:0;
+	  padding-left:5px; 
+	  margin-right:5px;
+	  float:left;
+	  background-position: 15% 1O%;
+}
+
+#navbar ul
+	{
+      list-style-image:none ;
+      margin-top:300px;
+	}
+	
+#navbar li
+	{
+	  list-style-type: none;
+	  margin-top:15px;
+	  margin-bottom:15px;
+	}
+	
+#navbar a:hover {border-bottom:8px solid transparent;}
+
+#navbar a
+   {
+     color:#000;
+     background-color:transparent;
+     text-decoration:none;
+     display: block ; 
+	 width: 190px ;
+     border-bottom:8px solid #000;
+	 text-align: left;
+	 font-size: 0.8em;  
+	 margin-bottom:5px;
+ 	}
+
+/* Add new mods */
+
+#upload-mods
+{
+margin-top:30px} 	
+#container
+{
+text-align:left;
+margin-left:140px;
+padding-top:10px;
+}
+#logo 
+{
+}
+
+#container > #sf_admin_container .sf_admin_list th {background-color:#54FCFC;}
+#container > #sf_admin_container {margin-left:150px;}
+#sf_admin_container > h1, H1 {
+     border-bottom:8px solid #000;
+	 text-align: left;
+	 font-size: 1em;
+	 font-weight:normal;
+	 color:#000;
+     display: block ; 
+/* otro size
+	 width: 275px ;
+*/
+	 width:300px;
+	 margin-bottom:5px;}

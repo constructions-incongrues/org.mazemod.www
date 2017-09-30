@@ -1,0 +1,13 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Post
+    theme:            default
+
+    list:
+      display:        [=title, body, created_at, is_enabled]
+
+      sort:           [created_at, desc]
+
+    edit:
+      display:        [=title, body, is_enabled]

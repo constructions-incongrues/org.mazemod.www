@@ -1,0 +1,13 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Link
+    theme:            default
+
+    list:
+
+      display: [=title, url, _category]
+
+    edit:
+
+      display: [title, url, link_category_id]

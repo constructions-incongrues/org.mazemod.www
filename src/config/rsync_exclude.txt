@@ -1,0 +1,11 @@
+.svn
+/cache/*
+/lib/model/om
+/lib/model/map
+/log/*
+/web/*_dev.php
+/web/.htaccess
+/web/chip/*
+/web/resources/*
+/web/uploads/*
+/web/sf

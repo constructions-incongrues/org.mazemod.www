@@ -1,0 +1,48 @@
+# mazemod rules
+tracks_uncomplete:
+  url:   /tracks/list/uncomplete
+  param: { module: tracks, action: list, filter: uncomplete }
+
+tracks:
+  url:   /tracks/:action/*
+  param: { module: tracks, action: list }
+
+playlists:
+  url:   /playlists/:action/*
+  param: { module: playlists, action: list }
+
+uploader_file:
+  url:   /uploader/file
+  param: { module: uploader, action: file }
+
+uploader_confirm:
+  url:   /uploader/confirm
+  param: { module: uploader, action: confirm }
+
+uploader_finish:
+  url:   /uploader/finish
+  param: { module: uploader, action: finish }
+
+news:
+  url:   /news/:action/*
+  param: { module: news, action: list }
+
+links:
+  url:   /links/:action/*
+  param: { module: links, action: list }
+
+links_categories:
+  url:   /links_categories/:action/*
+  param: { module: links_categories, action: list }
+
+# default rules
+homepage:
+  url:   /
+  param: { module: dashboard, action: index }
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

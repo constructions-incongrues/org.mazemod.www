@@ -1,0 +1,41 @@
+Index: lib/symfony/plugins/sfPropelPlugin/lib/propel/sfPropelData.class.php
+===================================================================
+--- lib/symfony/plugins/sfPropelPlugin/lib/propel/sfPropelData.class.php	(revision 8055)
++++ lib/symfony/plugins/sfPropelPlugin/lib/propel/sfPropelData.class.php	(working copy)
+@@ -94,11 +94,17 @@
+       foreach ($datas as $key => $data)
+       {
+         // create a new entry in the database
+-        $obj = new $class();
++        $classname = ucfirst($class);
++        if (!class_exists($classname))
++        {
++          throw new sfException(sprintf('Unknown class "%s".'));
++        }
++
++        $obj = new $classname();
+ 
+         if (!$obj instanceof BaseObject)
+         {
+-          throw new Exception(sprintf('The class "%s" is not a Propel class. This probably means there is already a class named "%s" somewhere in symfony or in your project.', $class, $class));
++          throw new sfException(sprintf('The class "%s" is not a Propel class. This probably means there is already a class named "%s" somewhere in symfony or in your project.', $classname, $classname));
+         }
+ 
+         if (!is_array($data))
+@@ -245,7 +251,14 @@
+           continue;
+         }
+ 
+-        call_user_func(array($class.'Peer', 'doDeleteAll'), $this->con);
++        // Check that peer class exists before calling doDeleteAll()
++        $peer_classname = ucfirst($class.'Peer');
++        if (!class_exists($peer_classname))
++        {
++          throw new sfException(sprintf('Unknown class "%s".', $peer_classname));
++        }
++
++        call_user_func(array($peer_classname, 'doDeleteAll'), $this->con);
+ 
+         $this->deletedClasses[] = $class;
+       }
+

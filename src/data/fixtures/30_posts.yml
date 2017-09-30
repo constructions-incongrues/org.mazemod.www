@@ -1,0 +1,25 @@
+Post:
+
+  post1:
+    title: Mazemod released !
+    body: |
+      Donec vel odio id nibh tincidunt adipiscing.
+      Suspendisse malesuada pulvinar est. Nunc ultricies felis a orci.
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+      cubilia Curae; Suspendisse massa neque, viverra et, rhoncus ut, commodo feugiat, dui.
+      Donec sed velit. Aenean pharetra neque nec magna. Praesent tempus vehicula nibh.
+      Cras viverra, magna id commodo venenatis, magna lectus suscipit velit, nec suscipit augue
+      lorem sit amet magna. Suspendisse ac massa. Mauris elit ante, pharetra vitae, sagittis ut,
+      euismod a, felis.
+    is_enabled: true
+
+  post2:
+    title: "New playlist from goto80 :)"
+    body: |
+      Maecenas auctor urna non ante. Aliquam erat volutpat.
+      Donec non tellus non augue sagittis pretium. Nulla et urna nec risus
+      lobortis elementum. Nullam pulvinar metus non dolor volutpat adipiscing. Nam posuere. Ut est.
+      Vestibulum sagittis elit in metus. Vestibulum nec quam ut ipsum condimentum porttitor.
+      Fusce eget orci quis neque semper venenatis. Proin consectetuer.
+      Nunc ut augue. Nulla vitae mauris. In tempor.
+    is_enabled: false

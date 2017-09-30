@@ -1,0 +1,22 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Track
+    theme:            default
+
+    list:
+      display:        [=title, composer, tags_as_string, is_metadata_complete, is_enabled, created_at, _listen]
+
+      sort:           [created_at, desc]
+
+      object_actions:
+        _edit:        -
+        _delete:      -
+
+    edit:
+
+      display:
+        "NONE":           [id]
+        "Listen":         [_listen]
+        "Informations":   [title, composer, _tags]
+        "Settings":       [is_metadata_complete, is_enabled]

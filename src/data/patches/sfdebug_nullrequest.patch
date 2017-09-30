@@ -1,0 +1,14 @@
+Index: lib/symfony/debug/sfDebug.class.php
+===================================================================
+--- lib/symfony/debug/sfDebug.class.php	(revision 8095)
++++ lib/symfony/debug/sfDebug.class.php	(working copy)
+@@ -105,7 +105,7 @@
+    *
+    * @return array The request parameter holders
+    */
+-  public static function requestAsArray(sfRequest $request)
++  public static function requestAsArray(sfRequest $request = null)
+   {
+     if (!$request)
+     {
+

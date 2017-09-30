@@ -1,0 +1,74 @@
+Playlist:
+
+  playlist1:
+    title:        Bertier's mega playlist
+    author:       Michel Bertier
+    description: |
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc neque tortor, blandit a, 
+      pharetra vel, venenatis vel, augue. 
+      
+      Aliquam metus risus, pulvinar sit amet, gravida et, varius vel, orci. 
+      Maecenas dignissim, pede molestie elementum tempus, mi mi mattis lorem, 
+      quis elementum nisl lacus id ligula. Quisque gravida volutpat sapien. 
+      
+      Pellentesque nisi. Mauris mollis massa vel erat cursus tempor. 
+      Nunc eu neque. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+      Pellentesque habitant morbi tristique senectus et netus et malesuada 
+      fames ac turpis egestas. 
+      Quisque at nisi non neque vehicula posuere. 
+      
+      Nam bibendum porttitor arcu. 
+      Pellentesque venenatis lectus et metus. Donec faucibus. 
+      Integer dictum eros non odio. Nulla facilisi. Praesent nec lectus. 
+      Nullam ullamcorper nisi hendrerit tellus.
+      In porttitor, neque et pulvinar lacinia, nibh nibh luctus nisi, 
+      a elementum metus diam id nisi. 
+      
+      Mauris consequat cursus ligula. 
+      Quisque mi. Proin pede ipsum, scelerisque vitae, 
+      hendrerit a, eleifend vel, dolor. Maecenas pulvinar 
+      tincidunt purus. Sed convallis arcu. Aenean quis libero. 
+      Class aptent taciti sociosqu ad litora torquent per 
+      conubia nostra, per inceptos himenaeos. 
+      
+      Sed sit amet nisi. Morbi eleifend turpis in urna. 
+    is_enabled:   true
+
+  playlist2:
+    title:        goto80 seasonal favorites
+    author:       goto80
+    is_enabled:   true
+
+  playlist3:
+    title:        otro's amiga bestof 90's
+    author:       o_tr_o
+    description: |
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc neque tortor, blandit a, pharetra vel, venenatis vel, augue. Aliquam metus risus, pulvinar sit amet, gravida et, varius vel, orci. Maecenas dignissim, pede molestie elementum tempus, mi mi mattis lorem, quis elementum nisl lacus id ligula. Quisque gravida volutpat sapien. Pellentesque nisi. Mauris mollis massa vel erat cursus tempor. Nunc eu neque. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque at nisi non neque vehicula posuere. Nam bibendum porttitor arcu. Pellentesque venenatis lectus et metus. Donec faucibus. Integer dictum eros non odio. Nulla facilisi. Praesent nec lectus. Nullam ullamcorper nisi hendrerit tellus.
+      In porttitor, neque et pulvinar lacinia, nibh nibh luctus nisi, a elementum metus diam id nisi. Mauris consequat cursus ligula. Quisque mi. Proin pede ipsum, scelerisque vitae, hendrerit a, eleifend vel, dolor. Maecenas pulvinar tincidunt purus. Sed convallis arcu. Aenean quis libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed sit amet nisi. Morbi eleifend turpis in urna. 
+    is_enabled:   false
+
+PlaylistHasTrack:
+  rel1:
+    playlist_id:  playlist1
+    track_id:        track1
+    position:     1
+
+  rel2:
+    playlist_id:  playlist1
+    track_id:        track3
+    position:     2
+
+  rel3:
+    playlist_id:  playlist2
+    track_id:        track2
+    position:     1
+
+  rel4:
+    playlist_id:  playlist2
+    track_id:        track3
+    position:     2
+
+  rel5:
+    playlist_id:  playlist2
+    track_id:     track1
+    position:     3

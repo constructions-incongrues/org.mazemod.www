@@ -1,0 +1,11 @@
+listSuccess:
+  has_layout: false
+
+listRandomSuccess:
+  has_layout: false
+
+playlistSuccess:
+  has_layout: false
+
+tagsSuccess:
+  has_layout: false

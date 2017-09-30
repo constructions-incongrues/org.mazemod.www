@@ -1,0 +1,17 @@
+all:
+  propel:
+    class: sfPropelDatabase
+    param:
+      dsn: 'mysql://root@localhost/mazemod_trunk?encoding=utf8'
+
+preview:
+  propel:
+    class: sfPropelDatabase
+    param:
+      dsn: 'mysql://mazemod_prev_dba:wint8gryWo@localhost/trivoallan_mazemod_preview?encoding=utf8'
+
+prod:
+  propel:
+    class: sfPropelDatabase
+    param:
+      dsn: 'mysql://mazemod_org:mazemod.org_66@mysql.1/mazemod_org?encoding=utf8'

@@ -1,0 +1,22 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Playlist
+    theme:            default
+
+    list:
+
+      display:          [=title, author, number_of_tracks, updated_at, is_enabled]
+
+      object_actions:
+        _edit:        -
+        _delete:      -
+
+    edit:
+
+      display:          [title, author, description, is_enabled, playlist_track]
+
+      fields:
+        playlist_track:
+          type:      admin_double_list
+          params:    through_class=PlaylistHasTrack size=30 style="width:30em;"

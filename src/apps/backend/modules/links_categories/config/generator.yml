@@ -1,0 +1,13 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      LinkCategory
+    theme:            default
+
+    list:
+
+      display: [=name, _num_links]
+
+    edit:
+
+      display: [name]

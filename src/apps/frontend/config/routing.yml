@@ -1,0 +1,61 @@
+# Mazemod rules
+
+# -- Feeds
+feeds_posts:
+  url:   /feeds/posts.atom
+  param: { module: feeds, action: posts }
+
+# -- Pages
+pages_infos:
+  url:   /about.html
+  param: { module: pages, action: infos }
+
+pages_playlist:
+  url:   /playlists.html
+  param: { module: pages, action: playlist }
+
+pages_links:
+  url:   /links.html
+  param: { module: pages, action: links }
+
+pages_contact:
+  url:   /contact.html
+  param: { module: pages, action: contact }
+
+pages_news:
+  url:   /news.html
+  param: { module: pages, action: news }
+
+pages_credits:
+  url:   /credits.html
+  param: { module: pages, action: credits }
+
+# -- Web services
+tracks_list:
+  url:   /tracks.:sf_format
+  param: { module: tracks, action: list }
+
+tracks_list_random:
+  url:   /tracks/random
+  param: { module: tracks, action: listRandom }
+
+tracks_list_tagged:
+  url:   /tracks/:tags
+  param: { module: tracks, action: list, sf_format: xspf }
+
+tracks_tags:
+  url:   /tracks/tags.xml
+  param: { module: tracks, action: tags }
+
+playlist_tracks:
+  url:   /playlist/:playlist_id.:sf_format
+  param: { module: tracks, action: playlist }
+
+artwork_random:
+  url:   /artwork/random.:sf_format
+  param: { module: artwork, action: random }
+
+# default rules
+homepage:
+  url:   /
+  param: { module: pages, action: news }

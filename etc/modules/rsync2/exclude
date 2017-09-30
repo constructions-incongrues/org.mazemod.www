@@ -9,3 +9,11 @@
 /etc
 /vendor/constructions-incongrues/ananas-build-toolkit
 /.vagrant
+/src/cache/*
+/lib/model/om
+/lib/model/map
+/src/log/*
+/src/web/*_dev.php
+/web/chip/*
+/web/resources/*
+/web/uploads/*

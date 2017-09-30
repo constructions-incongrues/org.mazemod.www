@@ -2,3 +2,7 @@
 /.project
 /.settings
 /cache
+/vendor/
+/.vagrant
+*.bak
+/etc/trivoallan
